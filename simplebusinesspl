@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Business Plan Template Generator</title>
+  <style>
+    /#template-form {
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#template-form h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+#template-form p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+#template-form label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: #333;
+  display: block;
+  margin-bottom: 10px;
+}
+
+#template-form input[type="text"], #template-form textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  resize: vertical;
+}
+/
+  </style>
+</head>
+<body>
+  <<form id="template-form">
+  <h2>Business Plan Template Generator</h2>
+  <p>Use this form to generate a customized business plan template based on your input.</p>
+
+  <label for="business-name">Business Name:</label><br>
+  <input type="text" id="business-name" name="business-name" required><br>
+
+  <label for="industry">Industry:</label><br>
+  <input type="text" id="industry" name="industry" required><br>
+
+  <label for="target-market">Target Market:</label><br>
+  <input type="text" id="target-market" name="target-market" required><br>
+
+  <label for="product-service">Product or Service Offering:</label><br>
+  <textarea id="product-service" name="product-service" required></textarea><br>
+
+  <label for="marketing-sales">Marketing and Sales Strategies:</label><br>
+  <textarea id="marketing-sales" name="marketing-sales" required></textarea><br>
+
+  <label for="financial-projections">Financial Projections:</label><br>
+  <textarea id="financial-projections" name="financial-projections" required></textarea><br>
+
+  <input type="submit" value="Generate Template">
+</form> 
+>
+</body>
+</html>
