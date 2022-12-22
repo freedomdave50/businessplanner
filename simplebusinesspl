@@ -3,7 +3,7 @@
 <head>
   <title>Business Plan Template Generator</title>
   <style>
-    /#template-form {
+    #template-form {
   width: 500px;
   margin: 0 auto;
   text-align: center;
@@ -45,8 +45,42 @@
   font-size: 16px;
   resize: vertical;
 }
-/
+
   </style>
+  <script>
+    // Get a reference to the form element
+const form = document.getElementById('template-form');
+
+// Add a submit event listener to the form
+form.addEventListener('submit', function(event) {
+  // Prevent the default form submission behavior
+  event.preventDefault();
+
+  // Get the form data
+  const businessName = form.elements['business-name'].value;
+  const industry = form.elements['industry'].value;
+  const targetMarket = form.elements['target-market'].value;
+  const productService = form.elements['product-service'].value;
+  const marketingSales = form.elements['marketing-sales'].value;
+  const financialProjections = form.elements['financial-projections'].value;
+
+  // Validate the form data
+  if (!businessName || !industry || !targetMarket || !productService || !marketingSales || !financialProjections) {
+    // If any required fields are empty, display an error message
+    alert('Please complete all required fields.');
+  } else {
+    // If all required fields are filled, generate the template
+    generateTemplate(businessName, industry, targetMarket, productService, marketingSales, financialProjections);
+  }
+});
+
+// Define the generateTemplate function
+function generateTemplate(businessName, industry, targetMarket, productService, marketingSales, financialProjections) {
+  // Create the template HTML
+  const template = `
+    <h1
+
+  </script>
 </head>
 <body>
   <<form id="template-form">
